@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="Open-Set Semantic Ray Frontiers for Online Scene Understanding and Exploration">
+  <meta name="keywords" content="RayFronts, Open-Vocabulary, Semantic Segmentation">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>RayFronts: Open-Set Semantic Ray Frontiers for Online Scene Understanding and Exploration</title>
+
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/favicon.svg">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+<!-- <nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div class="navbar-menu">
+    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+      <a class="navbar-item" href="">
+      <span class="icon">
+          <i class="fas fa-home"></i>
+      </span>
+      </a>
+    </div>
+
+  </div>
+</nav> -->
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title"><img src="static/images/logo.svg" width="50%"/><br/>Open-Set Semantic Ray Frontiers for Online Scene Understanding and Exploration</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://www.linkedin.com/in/omaralama/">Omar Alama</a>,</span>
+            <span class="author-block">
+              <a href="https://www.linkedin.com/in/avigyan-bhattacharya">Avigyan Bhattacharya</a>,</span>
+            <span class="author-block">
+              <a href="https://purenothingness24.github.io/">Haoyang He</a>,
+            </span>
+            <span class="author-block">
+              <a href="https://seungchan-kim.github.io/">Seungchan Kim</a>,
+            </span>
+            <br/>
+            <span class="author-block">
+              <a href="https://haleqiu.github.io/">Yuheng Qiu</a>,
+            </span>
+            <span class="author-block">
+              <a href="https://theairlab.org/team/wenshan/">Wenshan Wang</a>,
+            </span>
+            <span class="author-block">
+              <a href="https://cherieho.com/">Cherie Ho</a>,
+            </span>
+            <span class="author-block">
+              <a href="https://nik-v9.github.io/">Nikhil Keetha</a>,
+            </span>
+            <span class="author-block">
+              <a href="https://theairlab.org/team/sebastian/">Sebastian Scherer</a>
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">Carnegie Mellon University</span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <!-- <span class="link-block">
+                <a href=""
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span> -->
+              <span class="link-block">
+                <a href=""
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+              <!-- Video Link. -->
+              <span class="link-block">
+                <a href=""
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                  </span>
+                  <span>Video</span>
+                </a>
+              </span>
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://github.com/RayFronts/RayFronts"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <video id="teaser" autoplay muted loop playsinline height="100%">
+        <source src="./static/videos/srchvol_teaser.mp4"
+                type="video/mp4">
+      </video>
+      <h2 class="subtitle has-text-centered">
+        <span class="dnerf"><span class="dnerf">RayFronts</span> can be used to effectively limit and triangulate object search volumes.
+      </h2>
+    </div>
+  </div>
+</section>
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <video id="teaser" autoplay muted loop playsinline height="100%">
+        <source src="./static/videos/querying_teaser.mp4"
+                type="video/mp4">
+      </video>
+      <h2 class="subtitle has-text-centered">
+        <span class="dnerf">RayFronts</span> Can be queried with open-set text and images within the map and beyond.
+      </h2>
+    </div>
+  </div>
+</section>
+
+<!-- <section class="hero is-light is-small">
+  <div class="hero-body">
+    <div class="column is-four-fifths">
+      <div class="content has-text-justified">
+      
+    </div>
+    </div>
+  </div>
+</section> -->
+
+
+<section class="section">
+  <div class="container is-max-desktop is-light">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Open-set semantic mapping is crucial for open-world robots. Current mapping approaches either are limited by the depth range or only map beyond-range entities in constrained settings, where overall they fail to combine within-range and beyond-range observations.
+            Furthermore, these methods make a trade-off between fine-grained semantics and efficiency.
+            We introduce <b><i>RayFronts</i></b>, a unified representation that enables both dense and beyond-range efficient semantic mapping.
+            <b><i>RayFronts</i></b> encodes task-agnostic open-set semantics to both in-range voxels and beyond-range rays encoded at map boundaries, empowering the robot to reduce search volumes significantly and make informed decisions both within & beyond sensory range, while running at <b>8.84 Hz</b> on an Orin AGX.
+            Benchmarking the within-range semantics shows that <b><i>RayFronts</i></b>'s fine-grained image encoding provides <b>1.34x</b> zero-shot 3D semantic segmentation performance while improving throughput by <b>16.5x</b>.
+            Traditionally, online mapping performance is entangled with other system components, complicating evaluation.
+            We propose a planner-agnostic evaluation framework that captures the utility for online beyond-range search and exploration, and show <b><i>RayFronts</i></b> reduces search volume <b>2.2x</b> more efficiently than the closest online baselines.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+
+    <!-- Paper video. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Video</h2>
+        <div class="publication-video">
+          <iframe src=""
+                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+    <!--/ Paper video. -->
+  </div>
+</section>
+
+<section class="hero">
+  <div class="container is-max-desktop">
+    <div class="hero-body has-text-centered">
+      <h2 class="title is-3">System Design</h2>
+      <img src="static/images/system_fig.jpg">
+      <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <div class="content has-text-justified">
+          <p>Overview of our online mapping system, <b><i>RayFronts</i></b> is designed for multi-objective & multi-modal open-set querying of both in-range and beyond-range semantic entities. Given posed RGB-D images, we first extract dense features with our fast language-aligned image encoder. Then, posed depth information and features are used to construct a semantic voxel map for in-range queries. In parallel, <b><i>RayFronts</i></b> maintains a VDB-based occupancy map to generate frontiers, which are further associated with multi-directional semantic rays. The semantic ray fronts enables beyond-range querying of open-set concepts in the unmapped region.</p>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop is-light">
+    <h2 class="title is-3 has-text-centered">Online Semantic Mapping</h2>
+    <div class="columns is-centered has-text-centered is-four-fifths">
+      <div class="column">
+        <div class="content">
+          <img src="static/images/metric_explanation.svg" width="82%"/>
+          <p>
+            Our proposed planner-agnostic online-mapping evaluation metric captures how online mapping systems <i>correctly cuts down search volume</i>.
+          </p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="content">
+          <img src="static/images/online_mapping.svg" />
+          <p>
+            <b><i>RayFronts</i></b> is superior to all baselines across depth ranges empowering both fine-grained localization and beyond-range guidance.
+          </p>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+
+    <div class="columns is-centered has-text-centered">
+      <!-- Visual Effects. -->
+      <div class="column is-four-fifths">
+        <div class="content">
+          <h2 class="title is-3">Offline 3D Open-Vocabulary Semantic Segmentation</h2>
+          
+          <img src="static/images/offline_mapping_plot.svg"/>
+          <p>
+            <b><i>RayFronts</i></b> consistently outper-forms the baselines in mIoU, and achieves SOTA performance beating the next best baselines by <b>+18.07%</b> and
+            <b>+9.63%</b> mIoU on Replica and Scannet, respectively, excluding background. RayFronts is also able to handle background seamlessly with its single-forward pass approach while segment-then-encode approaches fall short.
+            For outdoor in-the-wild performance on TartanAirV2, <b><i>RayFronts</i></b> exceeds the performance of
+            the baselines by <b>3.36%</b> mIoU
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+
+    <div class="columns is-centered has-text-centered">
+      <!-- Visual Effects. -->
+      <div class="column is-four-fifths">
+        <div class="content">
+          <h2 class="title is-3">Encoder & Mapping Throughput Analysis</h2>
+          <img src="static/images/throughput_figure.jpg" width="80%"/>
+          <p>
+            <i><b>RayFronts</b> provides state-of-the-art mIoU & <b>17.5 Hz</b> throughput on an AGX Orin.</i> It surpasses Trident with <b>1.34x</b> higher mIoU and a <b>16.5x</b> speedup, while achieving <b>1.81x</b> higher mIoU than NACLIP, which operates at a similar throughput. We also evaluate the full mapping throughput and achieve real time performance at <b>8.84 Hz</b> on the AGX Orin.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@misc{alama2024rayfronts,
+      title={RayFronts: Open-Set Semantic Ray Frontiers for Online Scene Understanding and Exploration}, 
+      author={Omar Alama and Avigyan Bhattacharya and Haoyang He and Seungchan Kim and Yuheng Qiu and Wenshan Wang and Cherie Ho and Nikhil Keetha and Sebastian Scherer},
+      year={2025},
+      eprint={},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/}
+}</code></pre>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <a class="icon-link"
+         href="">
+        <i class="fas fa-file-pdf"></i>
+      </a>
+      <a class="icon-link" href="" class="external-link" disabled>
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This website is adapted from the Nerfies template, which is licensed under a <a rel="license"
+              href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+              Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

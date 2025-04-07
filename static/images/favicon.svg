@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="txt" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #d51a68;
+      }
+
+      .cls-2 {
+        fill: #331633;
+      }
+
+      .cls-3 {
+        fill: #e65825;
+      }
+    </style>
+  </defs>
+  <g>
+    <path class="cls-2" d="M75.93,91.24v15.02H30.88v30.03h45.05v15.02h-15.02v15.02h-15.02v-15.02h-15.02v45.05h-15.02v-105.12h60.07ZM75.93,181.33h-15.02v-15.02h15.02v15.02ZM90.95,136.28h-15.02v-30.03h15.02v30.03ZM90.95,196.35h-15.02v-15.02h15.02v15.02Z"/>
+    <path class="cls-2" d="M181.04,91.24v15.02h-60.07v30.03h45.05v15.02h-45.05v45.05h-15.02v-105.12h75.08Z"/>
+  </g>
+  <rect class="cls-1" x="11.45" y="38.74" width="85.59" height="12.97" transform="translate(-16.31 42.09) rotate(-37.28)"/>
+  <polygon class="cls-1" points="94.81 36.29 108.29 4.09 73.66 8.51 94.81 36.29"/>
+  <rect class="cls-3" x="16.2" y="66.05" width="145.18" height="12.97"/>
+  <polygon class="cls-3" points="156.27 89.99 186.5 72.53 156.27 55.08 156.27 89.99"/>
+</svg>
