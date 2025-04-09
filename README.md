@@ -1,4 +1,4 @@
-# Nerfies
+# RayFronts
 
 This is the repository that contains source code for the [RayFronts website](https://rayfronts.github.io).
 
