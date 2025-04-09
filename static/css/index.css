@@ -2,6 +2,9 @@ body {
   font-family: 'Noto Sans', sans-serif;
 }
 
+a {
+  color: #3e4399
+}
 
 .footer .icon-link {
     font-size: 25px;
@@ -71,7 +74,7 @@ body {
 }
 
 .publication-authors a {
-   color: hsl(204, 86%, 53%) !important;
+   color: #3e4399 !important;
 }
 
 .publication-authors a:hover {
@@ -80,6 +83,11 @@ body {
 
 .author-block {
   display: inline-block;
+}
+
+
+.university-name {
+  color: #d51a68;
 }
 
 .publication-banner img {
