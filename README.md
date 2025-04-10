@@ -4,13 +4,13 @@ This is the repository that contains source code for the [RayFronts website](htt
 
 If you find RayFronts useful for your work please cite:
 ```
-@misc{alama2024rayfronts,
+@misc{alama2025rayfrontsopensetsemanticray,
       title={RayFronts: Open-Set Semantic Ray Frontiers for Online Scene Understanding and Exploration}, 
       author={Omar Alama and Avigyan Bhattacharya and Haoyang He and Seungchan Kim and Yuheng Qiu and Wenshan Wang and Cherie Ho and Nikhil Keetha and Sebastian Scherer},
       year={2025},
-      eprint={},
+      eprint={2504.06994},
       archivePrefix={arXiv},
-      primaryClass={cs.CV},
-      url={https://arxiv.org/abs/}
+      primaryClass={cs.RO},
+      url={https://arxiv.org/abs/2504.06994}, 
 }
 ```
